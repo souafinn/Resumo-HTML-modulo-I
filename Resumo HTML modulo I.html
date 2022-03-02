@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Resumo HTML </title>
+</head>
+<body>
+<h1> Resumo módulo I de HTML</h1>
+
+<h2>    Trabalhando com paragráfos e quebra de linha  </h2>
+    <p>Para criar um paragráfo, utilize a tag
+     <code>
+         &lt;p&gt
+     </code>
+
+    </p>
+    <p>Você pode criar vários paragráfos seguidos utilizando essa tag. <br>
+        Além disso, para fazer uma quebra de linha, pode-se utilizar a tag 
+        <code>
+            &lt;br&gt
+        </code>
+    </p>
+    
+    
+<h2>    Trabalhando com simbolos e emojis </h2>
+    <p> Para utilizar simbolos e emojis, é necessário que você busque a codificação do simbolo ou do emoji para implementá-lo.<br>
+         Deve-se começar com o E comercial ''&'' antes 
+        do código especifico do simbolo/emoji. <br>
+
+        Por exemplo: <br>
+        
+        &#169
+        &#8482
+        &#9996
+        
+
+    </p>
+
+<h2>    Trabalhando com imagens </h2>
+
+<img src="luan.jpg" alt="Minha foto" width="150" height="150">
+
+<p>
+    Para utilizar imagens, você deve usar a tag:
+    <code> <br>
+        &lt;img src=''## Nome da imagem ##'' alt=''## Texto alternativo da imagem ##'' width=''## Largura da imagem ##'' height=''## Altura da imagem ## ''
+    </code>
+
+</p>
+
+
+<h2>    Trabalhando com formatações </h2>
+<p>
+    É possivel trabalhar com palavras em negrito, italico e outros tipos de formatação. <br>
+    Para tal, utilize as seguintes tags: <br>
+    
+    
+ <pre>
+    <code>
+        &lt;strong&gt              para negritar alguma palavra ou texto, denotando uma forte <strong>importância</strong>
+        &lt;EM&gt                  para textos italicos, denotando do resto do conteudo por algum <em>motivo</em>
+        &lt;mark&gt                para marcar algum conteudo - <mark>''Grifando-o''</mark>
+        &lt;small&gt               para configurar um texto ou palavra em um tamanho <small>menor</small>
+        &lt;del&gt                 para configurar um texto <del>deletado</del>
+        &lt;ins&gt                 para configuar um texto <ins>inserido</ins>
+        &lt;sup&gt                 para obter um texto sobrescrito, tipo: 2x<sup>2</sup>
+        &lt;sub&gt                 para obter um texto subscrito, tipo: H<sub>2</sub>O
+        
+    </code>    
+ </pre>
+</p>
+
+<h2>    Trabalhando com citações e códigos</h2>
+<p>
+    É possivel utilizar as seguintes tags: <br>
+
+    <pre>
+        <code>
+        &lt;code&gt               para utilizar a formatação de código-fonte     
+        &lt;q&gt                  para utilizar citações simples: <q>O computador é um burro muito rápido</q> 
+        &lt;blockquote&gt         para citações completas 
+        &lt;abbr&gt               para abreviações, onde você pode passar o mouse, tipo <abbr title="Olá leitor">aqui</abbr>
+        &lt;bdo dir=''rtl''&gt            <bdo dir="rtl">para textos invertidos, entendeu?</bdo> &#128540
+
+        </code>
+    </pre>
+
+</p>
+
+<h2>    Trabalhando com listas e definições  </h2>
+
+<h3>    Listas ordenadas e não ordenadas    </h3>
+
+<p> Para utilizar listas ordenadas, tipo assim:</p>
+<ol type="1" start="0"> 
+
+    <li>Acordar</li>
+    <li>Tomar café da manhã</li>
+    <li>Estudar</li>
+
+</ol>
+
+<p> É necessário utilizar as seguintes tags:</p>
+    <pre>
+        <code>
+         &lt;ol type=''1'' start=''0''&gt  Ou seja, a tag &lt;ol&gt para abrir uma lista ordenada, em seguida de type=''1'' e start=''0'' para identificar o tipo e seu início.
+                                      Não se esqueça de colocar &lt;li&gt sempre, para começar a listar.
+        </code>
+    </pre>
+
+<h3>    Listas não ordenadas    </h3>
+<p> Agora para utilizar listas não ordenadas, tipo assim:</p>
+
+<ul type="square"> 
+    <li>Pão</li>
+    <li>Azeite</li>
+    <li>Leite</li>
+    
+</ul>
+
+<p> É necessário utilizar as seguites tags:</p>
+    <pre>
+        <code>
+         &lt;ul type=''## Tipo de simbolo ##'' Ou seja, a tag &lt;ul&gt para abrir uma lista não ordenada, em seguida de type=''####'' identificar o tipo, por exemplo ''square''
+                                        Não se esqueça de colocar &lt;li&gt sempre, para começar a listar.
+        </code>
+    </pre>
+
+
+<h3> Trabalhando com definições de termos</h3>
+<dl>
+    <dt>Termo HTML</dt>
+    <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+</dl>
+
+<p> Para trabalhar com definições, utilize as seguintes tags: </p>
+<pre>
+    <code>
+         &lt;dt&gt               para abrir o termo
+         &lt;dd&gt               para fazer a definição do termo
+    </code>
+</pre>
+
+<h2>    Trabalhando com links, âncoras e links para download   </h2>
+
+<p>
+    <img src="icone-linkedin.png" alt="Icone linkedin">/<a href="https://linkedin.com/in/luan-torres-b991baab/" target="_unblank" >luanhtorres</a> - Me acompanhe no Linkedin </p>
+</p>
+
+<p>
+    Baixe o pdf clicando <a href="#" download="#" type="application/pdf" target="_blank">aqui </a>
+</p> 
+
+<p>
+    Gostou? <br>
+    Para utilizar links ou links com downloads, utilize as seguintes tags:
+</p>
+
+<pre>
+    <code>
+         &lt;img src="## Origem da sua imagem ##" alt="Texto alternativo"&gt/&lt;a href="## link para onde quer direcionar ##" target="_unblank" &gt <strong>Nome do link</strong> &lt/a&gt - #Descrição do link# (para quando a pessoa clicar, direciona-la para outra guia em branco e não sair do seu site)
+         &lt;a href="##" download="##" type="application/pdf" target="_blank">aqui &lt/a&gt
+    </code>
+</pre>
+
+
+<h2> Trabalhando com Imagens dinâmicas</h2>
+
+<p>É possivel utilizar imagens dinâmicas no seu site, permitindo que elas se adaptem sozinhas dependendo do tamanho da tela do usuário</p>
+<p>Para tal, utilize a seguite tag:</p>
+
+<pre>
+    <code>
+        &lt;picture&gt
+        &lt;source media="(max-width: ## tamanho desejado: 750px ##)" srcset="## diretorio da imagem ##" type="## imagem menor ##" &gt
+        &lt;/picture&gt
+        </code>
+</pre>
+
+<p> É possível fazer isso para por exemplo três tamanhos diferentes de imagem: pequena, média e grande.</p>
+<p> Apenas se atente ao fato de que é preciso colocar as tags em ''ordem de tamanho'', ou seja, a tag com a menor imagem acima das outras.  </p>
+
+
+<h2> Trabalhando com audios e videos</h2>
+<p> É possivel trabalhar com audios no seu site, vou dar um exemplo</p>
+
+<audio preload="metadata" autoplay controls>
+    <source src="music/Donations (Sting) - Riot.mp3" type="audio/mpeg">
+</audio>
+
+<p> Para tal, utilize a seguite tag:</p>
+
+<pre>
+    <code>
+        &lt;audio preload="metadata" autoplay controls&gt
+        &lt;source src="## Endereço do seu áudio ##" type="audio/mpeg"&gt
+        &lt;/audio&gt
+        </code>
+</pre>
+
+
+<p> Para hospedar um video no seu site, a forma mais econômica e simples é utilizar videos do youtube, pois irá poupar o consumo de dados do seu site</p> 
+<p> Dessa forma, é simples: Basta acessar o Youtube, procurar um video desejado, clicar em "Compartilhar", e o próprio youtube irá ter a opção de "incorporar", ai basta colar!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gCARYHv6sdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h1>    E por fim, é isso!   </h1>
+<p> Espero que tenha sido de grande ajuda esse primeiro modulo de HTML </p>
+<p> Estou começando agora a estudar, e quis fazer um breve resumo de algumas coisas que aprendi nesse primeiro momento, tanto para me ajudar futuramente como para mostrar meu progresso com o passar do tempo</p>
+<p> Até mais! </p>
+
+
+
+
+
+
+
+ 
+</body>
+</html>
